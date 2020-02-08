@@ -79,7 +79,7 @@ public class App
           boolean result = App.search(inputList,inputList3,input2AsInt,input4AsString);
 
          Map map = new HashMap();
-          map.put("result", result);
+          map.put("1st box:array of integer\n2nd box:an integer\n3rd box:array of strings(each line has one element)\n4th box:a string\nif number of integers(entered 2nd box) in integer array(entered 1st box) is equal to number\n of Strings(entered 4th box) in String array(entered 3rd box) returns true.Else return false  \nresult", result);
           return new ModelAndView(map, "compute.mustache");
         }, new MustacheTemplateEngine());
 
@@ -87,7 +87,7 @@ public class App
         get("/compute",
             (rq, rs) -> {
               Map map = new HashMap();
-              map.put("result", "not computed yet!");
+              map.put("1st box:array of integer\n2nd box:an integer\n3rd box:array of strings(each line has one element)\n4th box:a string\nif number of integers(entered 2nd box) in integer array(entered 1st box) is equal to number\n of Strings(entered 4th box) in String array(entered 3rd box) returns true.Else return false  \nresult", "not computed yet!");
               return new ModelAndView(map, "compute.mustache");
             },
             new MustacheTemplateEngine());
